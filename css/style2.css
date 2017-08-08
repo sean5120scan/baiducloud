@@ -1,0 +1,160 @@
+body,div,h1,h2,h3,h4,h5,h6,table,form,ul,ol,li{
+margin: 0;
+padding: 0
+}
+a{text-decoration:none}
+li{ list-style:none }
+.hList img{ width:70px; height:70px; border-radius:50%}
+.hList li{float:left;width:70px; height:70px; line-height:70px;}
+
+.clear:after {
+    content: '';
+    display: block;
+    overflow: hidden;
+    clear: both;
+}
+#container{ width:992px;margin:30px auto}
+#header { height:72px;padding-bottom:10px;border-bottom:1px solid #ddd}
+.logo{display:inline-block;width:147px; height:72px; background:url("./imgs/sprie.png") no-repeat;float:left}
+
+/* 右侧图标导航 */
+.hList{width:422px; float:right;position:relative;}
+.hList h4{width:72px;height:72px;float:left}
+.hList h4 img{ width:50px; height:50px;}
+.hList ol{width:350px; height:72px;float:right}
+/* 上传按钮*/
+.hList input{position:absolute;left:-9999px;top:-10000px}
+.hList label{width:50px;height:50px;position:absolute;left:0px;top:5px;z-index:100;}
+.hList li{ width:70px; height:32px;line-height:32px;text-align:center;font-size:14px;cursor:pointer;float:left;text-align:center;transition:0.1s}
+.hList li:hover{color:#1da0d6}
+.hList ol li:nth-of-type(3){ background:url("./imgs/ico-message.png") 0px -385px  no-repeat}
+.hList ol li:nth-of-type(4){ background:url("./imgs/ico-message.png") 0px -1184px  no-repeat}
+/* 两组缩略图样式 */
+.hList ol li.showView{ background:url("./imgs/ico-message.png") 0px -1132px  no-repeat}
+.hList ol li.smallView{background:url("./imgs/ico-message.png") 0px -992px  no-repeat}
+
+/* 顶部功能菜单导航 */
+#nav {
+    margin: 10px;width:720px;float:left
+}
+#nav li{width:120px; height:40px; line-height: 40px;border:1px solid #30baf3;text-indent:20px;text-indent:34px;border-radius:5px;font-size:14px;
+}
+#nav li a{color:#466f80;}
+#nav li a:hover{ color:#6aadc9}
+#nav li:nth-of-type(1){ background:url("./imgs/ico-message.png") 10px -605px no-repeat}
+#nav li:nth-of-type(2){ background:url("./imgs/ico-message.png") 10px -478px no-repeat}
+#nav li:nth-of-type(3){background:url("./imgs/ico-message.png") 10px -540px no-repeat}
+#nav li:nth-of-type(4){ background:url("./imgs/ico-message.png") 10px -765px no-repeat}
+#nav li:nth-of-type(5){ background:url("./imgs/ico-message.png") 10px -412px no-repeat}
+/* 文件夹样式 */
+#list li{
+  width: 80%;
+  list-style-type: none;
+  padding: 10px;
+  float: left;
+  position:relative;
+  border: 1px solid #fff;
+  cursor: pointer;
+  margin: 10px;
+}
+
+#list li p{margin: 0; line-height: 30px;width:220px;margin-left:15px;text-indent:1.2em}
+#list li label{width:14px;height:14px;border:1px solid #30baf3;position:absolute;top:10px;left:3px;background:url('check.png') no-repeat ;z-index:99;display:none}
+#list li label.checkbox {
+    background: url('check.png') no-repeat 0 0px;
+}
+#list li div.folder {
+   float:left;width: 60px; height:20px; background: url('folder-tree.png') no-repeat 15px 5px;
+}
+
+#list li input[type="text"] {
+    text-align: center;
+    display:none
+}
+ #list li.checked {
+    border: 1px solid #00b3ee;
+    background: rgba(173, 216, 230, .3);
+}
+#list li.checked label{
+    display:block
+}
+
+/*-----文件夹切换样式------*/
+#list li.thumbnail
+{
+    width: 130px;
+    height:100px;
+    position: relative;
+    list-style-type: none;
+    padding: 10px;
+    float: left;
+    text-align: center;
+    border: 1px solid #fff;
+    cursor: pointer;
+    margin: 10px;
+}
+#list li.thumbnail p{margin: 0; line-height: 30px;}
+#list li.thumbnail label{width:14px;height:14px;border:1px solid #30baf3;position:absolute;top:5px;left:5px;background:url('check.png') no-repeat ;z-index:99;display:none}
+
+/*  #list li.file-checked{
+
+     border: 1px solid #00b3ee;
+     background: rgba(173, 216, 230, .3);
+} */
+#list li.thumbnail  label.checkbox {
+    background: url('check.png') no-repeat 0 -15px;
+}
+#list li.thumbnail  div.folder {
+    margin: 0 auto;
+    width: 64px;
+    height: 54px;
+    background: url('file.png') no-repeat 0 -5px;
+}
+
+#list li.thumbnail  input[type="text"] {
+    width: 50px;
+    text-align: center;
+    display:none
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#nav {
+    margin: 10px 0;
+    padding: 0;
+}
+#nav li {
+    display: inline-block; margin-right:5px;
+}
+#list li.origin  input.show{display:block}
+#list li .nameTxt{width: 100%;display:none}
+.sideBar{ width:200px;float: left;min-height:400px; padding-bottom:15px;background:#ddd  }
+.cont{margin-left: 200px;}
+ .treeList{ background:#ddd ;padding:5px;}
+ .treeList li{ line-height:30px;cursor:pointer}
+ .treeList li strong{padding:5px}
+ .treeList li strong:hover{ background:#b5c6e5}
+
+/* 面包屑导航菜单导航 */
+.crumbsBox{ border-bottom:1px solid #ddd;padding-bottom:5px; margin-bottom: 10px;}
+.checkAllBtn{float:left; width:50px;height:30px;line-height:30px;border:1px solid #b5c6e5;font-size:12px; padding:3px;font-weight:bold;margin-right: 5px;}
+.crumbs{float:left;width:500px;height:40px;}
+.crumbs a{display:inline-block;height:34px;line-height:34px;line-height:33px;text-align:center;color:#000;padding:3px;}
+ .CrumbsBg1{display:block;width:123px;height:34px;line-height:34px;background:url('main-path.png') 0 -94px no-repeat;}
+#contMenu{ width:180px; border:1px solid #000;display:none;position:absolute;left:0;top:0; background:#fff}
+#contMenu li{line-height:30px;border-bottom:1px solid #000 ;padding:5px;}
+
+

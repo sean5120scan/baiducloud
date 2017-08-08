@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body >
+  <div id="container">
+<!--   头部信息 -->
+     <div id="header">
+       <a href="#" class="logo"><img src="./imgs/sprie.png" alt="" /></a>
+       <div class="hList" >
+           <h4 id="avatarBox"><img src="./imgs/5.jpg" alt="" id="avatar"><label for="upload" title="点击切换头像"></label><input type="file" id="upload" accept="image/*" /></h4>
+       <ol>
+         <li>客户端下载</li>
+         <li>|</li>
+         <li>分享</li>
+         <li>关注</li>
+         <li id="changeViewBtn" class="smallView">查看</li>
+       </ol>
+       </div>
+     </div>
+<!-- 功能菜单 -->
+    <div class="toolMenu clear">
+
+      <ul id="nav">
+<!--           <li>
+    <label for="checkAll"><input type="checkbox" id="checkAll"> 全选</label>
+</li> -->
+          <li>
+              <a href="javascript:;" class="topLever">返回顶层</a>
+          </li>
+
+           <li>
+             <a href="javascript:;" class="back">返回上一层</a>
+         </li>
+
+          <li>
+              <a href="javascript:;" id="createFolderBtn">新建文件夹</a>
+          </li>
+
+          <li>
+              <a href="javascript:;" id="delFolderBtn">删除文件夹</a>
+          </li>
+
+          <li>
+              <a href="javascript:;" id="cloFolderBtn">复制文件夹</a>
+          </li>
+      </ul>
+
+    </div>
+
+<!--面包屑导航菜单 -->
+    <div class="crumbsBox clear ">
+         <div class="checkAllBtn"><input type="checkbox" id="checkAll"> 全选</div>
+        <div class="crumbs"></div>
+    </div>
+
+     <div class="container">
+         <div class="sideBar">
+               <ul class="treeList">
+              </ul>
+         </div>
+         <div class="cont">
+             <ul id="list" class="clear">
+             </ul>
+         </div>
+    </div>
+<!--右键菜单 -->
+  <div id="contMenu">
+     <ul>
+       <li>复制</li>
+       <li>返回</li>
+       <li>新建文件夹</li>
+       <li>删除</li>
+     </ul>
+  </div>
+
+</div>
+
+</body>
+</html>
+<script src="./js/datalist.js"></script>
+<script src="./js/model.js"></script>
+<script src="./js/tools.js"></script>
+<script src="./js/index.js"></script>
